@@ -8,7 +8,7 @@ representative artificial designed AQM schemes, we found that
 Kemy-generated scheme performs better than other, and is more
 effective against bufferbloat.
 
-![](https://github.com/jkemy/Kemy-reproduce/blob/master/doc/images/dumbbell_result.png)
+![](https://github.com/etaf/Kemy-reproduce/blob/master/doc/images/dumbbell_result.png)
 
 > ##Reproduce the Results
 
@@ -26,14 +26,13 @@ Download the source codes:
 **Steps:**
 
 1. ```git clone https://github.com/jkemy/Kemy-reproduce.git```
-2. ```tar -xf kemy-reprodece```
-3. ```cd kemy-reproduce```
-4. ```./install```
-5. ```cd ns-2.35/tcl/ex/congctrl```
-6. ```./main.py```
+2. ```cd kemy-reproduce```
+3. ```./install```
+4. ```cd ns-2.35/tcl/ex/congctrl```
+5. ```./main.py```
 
 if successful, you will see the following uncolorized image:
-![](https://github.com/jkemy/Kemy-reproduce/blob/master/doc/images/origin-result.png)
+![](https://github.com/etaf/Kemy-reproduce/blob/master/doc/images/origin-result.png)
 --------
 
 > ##Run training code
