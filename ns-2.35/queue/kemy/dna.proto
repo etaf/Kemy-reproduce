@@ -1,0 +1,28 @@
+package KemyBuffers;
+
+message WhiskerTree {
+  optional MemoryRange domain = 1;
+
+  repeated WhiskerTree children = 2;
+
+  optional Whisker leaf = 3;
+
+}
+
+message MemoryRange {
+  optional Memory lower = 11;
+  optional Memory upper = 12;
+}
+
+message Memory {
+  optional double ewma_qlen = 21;
+}
+
+message Whisker {
+  optional sint32 window_increment = 31;
+  optional double window_multiple = 32;
+
+  optional MemoryRange domain = 34;
+}
+
+

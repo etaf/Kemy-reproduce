@@ -1,0 +1,6 @@
+*.o
+*.png
+*.nam
+*.tr
+*.svg
+results/*

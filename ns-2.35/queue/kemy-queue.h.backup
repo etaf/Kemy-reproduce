@@ -1,0 +1,24 @@
+#ifndef KEMY_QUEUE_HH
+#define KEMY_QUEUE_HH
+#include "flags.h"
+#include "random.h"
+#include "template.h"
+#include "queue.h"
+#include <queue>
+#include "kemy/whiskertree.hh"
+#include "address.h"
+class KemyQueue:public Queue
+{
+    public:
+        KemyQueue();
+
+    protected:
+        WhiskerTree*  _whiskers;
+        Memory _memory;
+        std::queue< Packet* > _queue;
+        unsigned int _the_window;
+
+        void  enque(Packet* );
+        Packet*  deque();
+};
+#endif
